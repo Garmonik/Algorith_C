@@ -71,7 +71,7 @@ void matrix_print(const char* name, Matrix* m){
 	int i, j;
 	printf("Matrix: %s (%dx%d)\n", name, m -> rows, m -> cols);
 	for(i = 0; i < m->rows; i++){
-		for( j = 0; j < m->cols; j++){
+		for(j = 0; j < m->cols; j++){
 			printf(" %d ", MAT_IND(m, i, j));
 		}
 		printf("\n");
